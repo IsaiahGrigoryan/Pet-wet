@@ -1,0 +1,212 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.container{margin: 0 auto; max-width: 1140px;}
+
+.flexContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;  
+    text-align: center;
+    align-items: center;
+}
+.flexcontainer{
+    display: flex;
+}
+nav{
+    /* padding: 20px 0; */
+    position: sticky;
+    top: 0;
+    background-color: #ffffff88;
+    z-index: 999;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav-menu{
+    width: 60%;
+    flex-grow: 1;
+}
+.nav-menu > ul > li{
+    padding: 20px;
+}
+.logo{
+    width: 40%;
+}
+.log{
+    margin-right: 300px;
+}
+.nav-menu ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+.nav-menu > ul{
+display: flex;
+justify-content: space-between;
+font-size: 20px;
+font-family: monospace;
+align-items: center; 
+}
+.nav-menu > ul > li > ul{
+    transform: rotateX(90deg);
+    transition: .7s;
+    transform-origin: top;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 15px rgb(210, 115, 52);
+    padding: 10px;
+    margin-top: 20px;
+    flex-direction: column;
+    padding: 10px;
+}
+.nav-menu > ul > li:hover > ul{
+    transform: rotateX(0);
+}
+header{
+    background-color: orange;
+    height: 500px;
+    border-radius: 0 0 120px 120px;
+}
+.nav-menu > ul > li > ul > li > ul{
+    transform: rotateX(90deg);
+    transform-origin: right;
+    flex-direction: column;
+    position: absolute;
+    transition: 0.7s;
+    background-color: rgb(255,255,255);
+    padding: 10px;
+    margin: -15px 50px 0px 98px;
+}
+.nav-menu > ul > li > ul > li:hover > ul{
+    transform: rotate(0);
+}
+
+.nav-menu > ul > li > ul > li > ul >li:hover{
+    background-color: rgb(234,234,234);
+}
+.nav-menu > ul > li > ul > li:hover{
+    background-color: rgb(234, 234, 234);
+}
+.nav-menu ul li ul li{
+    border-bottom: 1px solid grey;
+    padding: 10px;
+}
+.h1{
+    display: flex;
+    width: 400px;
+    font-family: monospace;
+    font-size: 18px;
+    flex-direction: column;
+    gap: 50px;
+    color: white;
+}
+.pic{
+    width: 700px;
+    margin-top: 30px;
+}
+.mainpic{
+    width:100%;
+}
+.rel{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+h1{
+    font-size: 60px;
+    color: white;
+    margin-top: 40px;
+}
+.call{
+    display: flex;
+    padding: 20px;
+    border: 5px solid white;
+    justify-content: center;
+    color: orange;
+    border-radius: 50px;  
+    background-color: white; 
+    font-weight: 900;
+    font-size: 20px;
+}
+.call:hover{
+    background-color: orange;
+    color: white;
+}
+.sec{
+    width: 100%;
+    height:200px;
+}
+h2{
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+.ndp{
+    color: gray;
+    font-size: 20px;
+    text-align: center;
+}
+.div{
+    width: 300px;
+    height: 350px;
+    border: 2px solid orange;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition-duration: .7s;
+}
+.dogs{
+    background-color: orangered;
+    width: 150px;
+    padding: 30px;
+    border-radius: 60px 60px 10px 10px;
+    
+}
+.card{
+    justify-content: space-between;
+}
+h3{
+    padding: 20px;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cardp{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.div:hover{
+    transform: scale(1.03);
+    box-shadow: 5px 5px 5px 5px orange;
+    opacity: .8;
+}
+h1{
+    padding: 10px;
+    animation: colorAnimation 2s infinite alternate;
+}
+@keyframes colorAnimation {
+    from{
+            color: white;
+            transform: scale(1.1);
+    }
+    to{
+            color: orangered;
+    }
+}
+footer{
+    background-color: rgb(240, 200, 125);
+}
+.foot{
+    margin-top: 50px;
+    padding: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
